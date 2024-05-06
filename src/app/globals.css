@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Own CSS started from there */
+
+.underline-on-hover {
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px; 
+}
+
+.underline-on-hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  
+  height: 2px;
+  background-color:#2196F3;
+  transition: width 0.3s ease-in-out;
+}
+
+.underline-on-hover:hover::after {
+  width:100%;
+}
+
+.LOGO {
+  color: white;
+  line-height:50px; /* Adjust this value as needed */
+}
+.skillTAG{
+  font-size: 30px;
+  color:white;
+  margin-bottom: 20px;
+  font-weight: bold;
+
+
+}
+.skilltec{
+  font-size: 20px;
+  font-weight: bold;
+}
