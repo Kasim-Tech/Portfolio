@@ -14,6 +14,7 @@ import JS from "/public/Skills_Logo/javascript.png";
 import PHP from "/public/Skills_Logo/php.png";
 import HtmlLogo from "/public/Skills_Logo/html.png";
 import CssLogo from "/public/Skills_Logo/css.png";
+import shade from "/public/ME/shade.png";
 
 const Project = () => {
   return (
@@ -23,6 +24,11 @@ const Project = () => {
       </div>
       <div className="items-center text-white font-bold text-3xl mb-10 ">
         Selected Projects
+        <Image
+              src={shade}
+              alt="shade"
+              className="h-4 w-full "
+            />
       </div>
       {/* First project */}
       <div className="flex justify-between items-center w-full px-24 mt-6">

@@ -45,7 +45,7 @@ const Particals = () => {
                     },
                     modes: {
                         push: {
-                            quantity: 4,
+                            quantity: 2,
                             speed:5,
                         },
                         repulse: {

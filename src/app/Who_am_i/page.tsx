@@ -10,9 +10,12 @@ import Myself from "/public/ME/Myself.jpg";
 
 const Whoami = () => {
   return (
-    <div className="w-full relative bg-black text-white flex flex-col justify-center items-center">
+    <div className="w-full  bg-black text-white flex flex-col justify-center items-center">
       <Particles />
-      <div className="text-center font-bold" style={{ width: "50%" }}>
+      <div
+        className="text-center  bg-black relative rounded-lg"
+        style={{ width: "50%" }}
+      >
         {/* <div className="text-center">
           <div className="inline-block">
             <Image
@@ -22,13 +25,13 @@ const Whoami = () => {
             />
           </div>
         </div> */}
-        <div className="text-4xl mt-5">Who am I?</div>
+        <div className="text-4xl mt-5 font-bold">Who am I?</div>
         <p className="text-lg mt-4">
-          I'm a frontend developer with a focus on React.js. I love building
-          user-friendly websites that make an impact. With hands-on experience
-          in web development, I thrive on turning ideas into polished,
-          functional interfaces. My goal is to create intuitive web experiences
-          that captivate and delight users.
+          I'm a frontend developer, mainly working with React.js. I enjoy
+          creating websites that are easy to use and leave a positive impact.
+          With over a year of experience in web development, I specialize in
+          turning ideas into polished, functional interfaces. My goal is to make
+          websites that are intuitive and enjoyable for users to navigate.
         </p>
 
         <div className="text-center justify-center  mt-5 flex gap-8 mb-8">

@@ -5,6 +5,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
+
 const HeroSection = () => {
   const [typeEffect] = useTypewriter({
     words: [
@@ -18,30 +19,35 @@ const HeroSection = () => {
     deleteSpeed: 40,
   });
 
- 
-  
-
-
   return (
     <div
       className="w-full relative bg-black text-white flex flex-col justify-center items-center"
-      style={{ marginTop: "64px", height: "calc(100vh - 64px)" }}
+      style={{ marginTop: "64px", minHeight: "calc(100vh - 64px)" }}
     >
       <Particles />
-      <div
-        className="text-center font-bold"
-        style={{ width: "50%" }}
-      >
-        <div className="text-4xl">Abu Kasim</div>
+      <div className="text-center font-bold" style={{ width: "80%" }}>
+        <div className="text-4xl md:text-5xl lg:text-6xl">Abu Kasim</div>
         <div className="flex items-center justify-center mb-5">
-          <span className="font-bold text-2xl">a</span>
-          <span className="font-bold ml-2 text-2xl"> {typeEffect}</span>
+          <span className="font-bold text-xl md:text-2xl lg:text-3xl">a</span>
+          <span className="font-bold ml-2 text-xl md:text-2xl lg:text-3xl">{typeEffect}</span>
           <div className="ml-2">
             <Cursor />
           </div>
         </div>
-
-     
+        {/* <Button
+          variant="contained"
+          endIcon={<DownloadIcon />}
+          className="mr-3"
+        >
+          Download CV
+        </Button>
+        <Button
+          variant="contained"
+          endIcon={<AttachEmailIcon />}
+          className="ml-3"
+        >
+          Get in Touch
+        </Button> */}
       </div>
     </div>
   );

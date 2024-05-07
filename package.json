@@ -22,6 +22,7 @@
     "react-icons": "^5.2.0",
     "react-particles": "^2.12.2",
     "react-simple-typewriter": "^5.0.1",
+    "react-toastify": "^10.0.5",
     "react-tooltip": "^5.26.4",
     "styled-components": "^6.1.9",
     "tsparticles": "^3.3.0",
