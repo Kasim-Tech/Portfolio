@@ -9,6 +9,7 @@ import Image from "next/image";
 import { toast, ToastContainer } from "react-toastify"; // Import toast and ToastContainer
 import "react-toastify/dist/ReactToastify.css"; //
 import shade from "/public/ME/shade.png";
+import Email from "/public/ME/email.png";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -49,11 +50,8 @@ const Contact = () => {
       <ToastContainer />
       <div className="items-center text-white font-bold text-3xl   mt-12">
         Get in Touch
-        <Image
-              src={shade}
-              alt="shade"
-              className="h-4 w-full "
-            />
+       
+        <Image src={shade} alt="shade" className="h-4 w-full " />
       </div>
       <div className="flex justify-between items-center w-full px-24 mt-6">
         <div className="left w-2/3">
@@ -145,7 +143,7 @@ const Contact = () => {
             <h1 className="text-white font-bold text-2xl mt-5">
               I will Try To Connect With You As Soon As Possible...
             </h1>
-            <h1 className="text-white mt-5 font-semibold">Other Place</h1>
+            <h1 className="text-white mt-5 font-semibold">Other Places</h1>
             <div className="flex items-center mt-1">
               <a
                 href="https://github.com/Kasim-Tech"
@@ -159,6 +157,21 @@ const Contact = () => {
                   className="h-12 w-auto transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
                 />
                 <h1 className="ml-2 inline-block cursor-pointer">Github</h1>
+              </a>
+            </div>
+            <div className="flex items-center mt-1">
+              <a
+                href="mailto:kasim309309@gmail.com"
+                className="flex items-center text-white"
+              >
+                <Image
+                  src={Email}
+                  alt="Email"
+                  className="h-12 w-auto transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                />
+                <h1 className="ml-2 inline-block cursor-pointer text-white">
+                  E-mail
+                </h1>
               </a>
             </div>
           </div>

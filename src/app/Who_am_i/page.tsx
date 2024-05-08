@@ -1,10 +1,11 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 import Particles from "../Components/Particals";
+import CountUp from "react-countup";
 import Image from "next/image";
 import Myself from "/public/ME/Myself.jpg";
 
@@ -82,6 +83,32 @@ const Whoami = () => {
           </div>
         </div>
       </div>
+      {/* <h1 className="text-white text-2xl mt-5 font-semi-bold">
+        Years Of Experience
+      </h1>
+      <div className="text-center flex gap-10 mt-3">
+  <div className="text-3xl">
+    <div className="count-container">
+      <div className="circle-content">
+        <h1 className="text-white">Years</h1>
+        <div className="count">
+          <CountUp start={0.0} end={1.0} duration={2} delay={1} />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="text-3xl">
+    <div className="count-container">
+      <div className="circle-content">
+        <h1 className="text-white">Months</h1>
+        <div className="count">
+          <CountUp start={0.0} end={2.0} duration={2} delay={1} />
+        </div>
+      </div>
+    </div>
+  </div>
+</div> */}
+
     </div>
   );
 };

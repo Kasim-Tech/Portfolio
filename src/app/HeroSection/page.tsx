@@ -2,9 +2,6 @@
 import React from "react";
 import Particles from "../Components/Particals";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import { Button } from "@mui/material";
-import DownloadIcon from "@mui/icons-material/Download";
-import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 
 const HeroSection = () => {
   const [typeEffect] = useTypewriter({
