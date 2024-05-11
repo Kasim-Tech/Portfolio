@@ -48,7 +48,7 @@ const Contact = () => {
         <Particles />
       </div>
       <ToastContainer />
-      <div className="items-center text-white font-bold text-3xl   mt-12">
+      <div className="items-center text-white font-bold text-3xl   mt-24">
         Get in Touch
        
         <Image src={shade} alt="shade" className="h-4 w-full " />
@@ -137,12 +137,12 @@ const Contact = () => {
 
         <div className="right">
           <div>
-            <h1 className="text-white font-bold text-3xl ">
+            <h1 className="text-white font-bold text-3xl MAINHEDDING">
               "Feel Free to Reach Out."
             </h1>
-            <h1 className="text-white font-bold text-2xl mt-5">
+            <h2 className="text-white font-bold text-2xl mt-5">
               I will Try To Connect With You As Soon As Possible...
-            </h1>
+            </h2>
             <h1 className="text-white mt-5 font-semibold">Other Places</h1>
             <div className="flex items-center mt-1">
               <a

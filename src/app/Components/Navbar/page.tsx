@@ -17,17 +17,13 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 interface Props {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
   window?: () => Window;
 }
 
-const drawerWidth = 240;
-const navItems = ['Home', 'Skills', 'Projects','Contact'];
+const drawerWidth = 260;
+const navItems = ['Home', 'Skills', 'Projects', 'Contact'];
 
-export default function Navbar (props: Props) {
+export default function Navbar(props: Props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
@@ -36,9 +32,9 @@ export default function Navbar (props: Props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
+    <Box sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-      &lt;Kasim/&gt;
+        &lt;Kasim/&gt;
       </Typography>
       <Divider />
       <List>
@@ -58,7 +54,7 @@ export default function Navbar (props: Props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ backgroundColor: 'black' }}>
+      <AppBar position="fixed" sx={{ backgroundColor: 'black' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -73,9 +69,8 @@ export default function Navbar (props: Props) {
             variant="h6"
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
-            
           >
-             &lt;Kasim/&gt;
+            &lt;Kasim/&gt;
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
@@ -93,7 +88,7 @@ export default function Navbar (props: Props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
@@ -103,8 +98,6 @@ export default function Navbar (props: Props) {
           {drawer}
         </Drawer>
       </nav>
-      
-     
     </Box>
   );
 }

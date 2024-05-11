@@ -22,14 +22,15 @@ const Skills = () => {
     <div className="bg-black min-h-screen flex flex-col justify-center items-center">
       <div className="absolute inset-0 z-10">
         <Particles />
-      </div>{" "}
-      <div className=" relative z-10 grid grid-cols-1 justify-center items-center mt-[-50px]">
-        <p className=" skillTAG text-center mb-5 ">My skills & Knowledge</p>{" "}
-        {/* <Image src={shade} alt="shade" className="h-4 w-full mb-5 " /> */}
-        <p className=" skilltec text-white text-center mb-5 ">
+      </div>
+      <div className="relative z-20 flex flex-col justify-center items-center mt-[-50px]">
+        <p className="text-white text-center text-3xl md:text-4xl mb-5">
+          My Skills & Knowledge
+        </p>
+        <p className="text-white text-center mb-8 text-base md:text-lg lg:text-xl">
           My Daily Craft: Utilizing Technologies & Languages
         </p>
-        <div className="flex justify-center grid grid-cols-5 gap-4">
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-4">
           {[
             { image: HtmlLogo, name: "HTML", tooltip: "HTML" },
             { image: CssLogo, name: "CSS", tooltip: "CSS" },
@@ -38,18 +39,10 @@ const Skills = () => {
             { image: NextjsLogo, name: "NextJs", tooltip: "NextJs" },
             { image: Mysql, name: "MySql", tooltip: "MySql", whiteBg: true },
             { image: PHP, name: "PHP", tooltip: "PHP" },
-            {
-              image: Typescript,
-              name: "TypeScript",
-              tooltip: "TypeScript",
-            },
+            { image: Typescript, name: "TypeScript", tooltip: "TypeScript" },
             { image: PostmanLogo, name: "Postman", tooltip: "Postman" },
             { image: Github, name: "GitHub", tooltip: "GitHub" },
-            {
-              image: Bootstrap,
-              name: "Bootstrap",
-              tooltip: "Bootstrap",
-            },
+            { image: Bootstrap, name: "Bootstrap", tooltip: "Bootstrap" },
             { image: MUI, name: "MUI", tooltip: "Material UI" },
           ].map((logo, index) => (
             <Tooltip key={index} title={logo.tooltip} placement="top" arrow>
