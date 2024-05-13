@@ -20,7 +20,7 @@ const HeroSection = () => {
   return (
     <div
       className="w-full relative bg-black text-white flex flex-col justify-center items-center"
-      style={{ marginTop: "54px", minHeight: "calc(100vh - 54px)" }}
+      style={{ minHeight: "calc(100vh - 54px)" }}
     >
       <Particles />
       <div className="text-center font-bold">
