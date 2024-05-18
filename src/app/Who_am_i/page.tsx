@@ -42,9 +42,9 @@ const Whoami = () => {
                 backgroundColor: "#92C2E8",
                 color: "#000000",
               },
-              minWidth: "auto", // Increase button width for desktop
-              marginLeft: "4", // Add margin left on desktop
-              mt: { base: 2, md: 0 }, // Add margin top on mobile
+              minWidth: "auto", 
+              marginLeft: "4", 
+              mt: { base: 2, md: 0 },
             }}
           >
             <a href="/Kasim_cv.pdf" download>
