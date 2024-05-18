@@ -10,6 +10,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import shade from "/public/ME/shade.png";
 import Email from "/public/ME/email.png";
+import Call from "/public/ME/call.png";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -98,7 +99,7 @@ const Contact = () => {
                 </div>
                 <div className="rounded-lg">
                   <label htmlFor="phone" className="mt-4 block text-white">
-                  Message*:
+                    Message*:
                   </label>
                   <input
                     type="text"
@@ -140,7 +141,38 @@ const Contact = () => {
         {/* Right side content */}
         <div className="right md:text-white md:font-bold md:text-3xl md:MAINHEDDING">
           <div className="hidden md:block">"Feel Free to Reach Out."</div>
-          <div className="hidden md:block text-2xl">i will Contect you As soon as Possible..</div>
+          <div className="hidden md:block text-2xl">
+            i will Contect you As soon as Possible..
+          </div>
+          <div className="hidden md:block ">
+            <h1 className="text-2xl mt-5">Other Places</h1>
+            <div className="flex items-center space-x-2 mt-2 transition duration-300 ease-in-out transform hover:scale-105">
+              <a
+                href="https://github.com/Kasim-Tech"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 "
+              >
+                <Image src={Github} alt="Github" className="h-12 w-auto" />
+                <p className="text-sm md:text-base">Github</p>
+              </a>
+            </div>
+            <div className="flex items-center space-x-2 mt-2 transition duration-300 ease-in-out transform hover:scale-105">
+              <Image src={Email} alt="Email" className="h-12 w-auto" />
+              <a href="mailto:example@example.com" className="text-lg ">
+                Email
+              </a>
+            </div>
+
+            <div className="flex items-center space-x-2 mt-2 transition duration-300 ease-in-out transform hover:scale-105">
+              <Image
+                src={Call}
+                alt="Call"
+                className="h-10 w-auto transition duration-300 ease-in-out transform hover:scale-105"
+              />
+              <p className="text-sm md:text-base text-sm">+91 8433671309</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

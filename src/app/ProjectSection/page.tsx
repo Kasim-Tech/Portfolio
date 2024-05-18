@@ -228,7 +228,7 @@ const Project = () => {
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
             <h1 className="text-white text-2xl md:text-3xl">Smart-Tech</h1>
             <p className="text-white text-sm md:text-base mt-2">
-              An online shop with animation
+              An Simple online shop with some cool animations
             </p>
             <div className="flex gap-2 md:gap-4 mt-2">
               <Image
