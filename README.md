@@ -2,12 +2,12 @@
 
  Languages and tech used in this :-<br>
 
- Nextjs<br>
+<b> Nextjs<br>
  Reactjs<br>
- TypeScript
- MUI**
- For background Effect i used 
-** Particals.ts **
+ TypeScript<br>
+ MUI<br>
+ For background Effect i used <br>
+ Particals.ts<br></b>
 
 thanks for visiting if you like it pls give a STAR 
  
