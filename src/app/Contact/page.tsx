@@ -61,7 +61,7 @@ const Contact = () => {
                 {" "}
                 <div className="rounded-lg">
                   <label htmlFor="name" className="mt-4 block text-white">
-                    Your Name*:
+                    Name<span className="text-red-400 mr-1">*</span>:
                   </label>
                   <input
                     type="text"
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                 <div className="rounded-lg">
                   <label htmlFor="email" className="mt-4 block text-white">
-                    Your Email*:
+                    Email<span className="text-red-400 mr-1">*</span>:
                   </label>
                   <input
                     type="text"
@@ -87,7 +87,7 @@ const Contact = () => {
                 </div>
                 <div className="rounded-lg">
                   <label htmlFor="phone" className="mt-4 block text-white">
-                    Your Phone:
+                    Phone<span className=" mr-1"></span>:
                   </label>
                   <input
                     type="text"
@@ -99,7 +99,7 @@ const Contact = () => {
                 </div>
                 <div className="rounded-lg">
                   <label htmlFor="phone" className="mt-4 block text-white">
-                    Message*:
+                    Message<span className="text-red-400 mr-1">*</span>:
                   </label>
                   <input
                     type="text"
