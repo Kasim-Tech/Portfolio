@@ -7,6 +7,7 @@ import Contact from "./Contact/page";
 export default function Home() {
   return (
     <>
+    {/* all components */}
 <Navbar/>
 <Herosection/>
 <Who_am_i/>
