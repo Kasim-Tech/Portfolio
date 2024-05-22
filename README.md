@@ -1,9 +1,9 @@
  Portfolio LINK : https://kasimsportfolio.netlify.app/
 
- Languages and tech used in this :-
+ Languages and tech used in this :-<br>
 
-** Nextjs
- Reactjs
+ Nextjs<br>
+ Reactjs<br>
  TypeScript
  MUI**
  For background Effect i used 
