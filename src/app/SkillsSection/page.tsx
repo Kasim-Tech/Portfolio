@@ -15,7 +15,6 @@ import Bootstrap from "/public/Skills_Logo/bootstrap.png";
 import MUI from "/public/Skills_Logo/MUI.png";
 import JS from "/public/Skills_Logo/javascript.png";
 import PHP from "/public/Skills_Logo/php.png";
-import shade from "/public/ME/shade.png";
 
 const Skills = () => {
   return (

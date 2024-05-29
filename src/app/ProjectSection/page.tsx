@@ -131,6 +131,7 @@ const Project = () => {
           />
         </div>
 
+{/* this project is under work */}
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
             <h1 className="text-white text-2xl md:text-3xl">Admin Dashbord</h1>
