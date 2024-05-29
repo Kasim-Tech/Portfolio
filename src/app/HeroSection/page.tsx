@@ -1,6 +1,6 @@
 "use client"
   
-// Typing Effect
+
 
 import React from "react";
 import Particles from "../Components/Particals";
