@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Particles from "../Components/Particals";
 import Royalfashion from "/public/Projects_IMG/RoyalFashion1.png";
 import MegaMall from "/public/Projects_IMG/MegaMall.png";
+import TikTakToe from "/public/Projects_IMG/TikTakToe.png"
 import SmartTech from "/public/Projects_IMG/SmartTech.png";
 import Image from "next/image";
 import {
@@ -18,6 +19,7 @@ import {
 import LaunchIcon from "@mui/icons-material/Launch";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Reactjs from "/public/Skills_Logo/react.png";
+import Bootstrap from "/public/Skills_Logo/bootstrap.png";
 import Nextjs from "/public/Skills_Logo/nextjs.png";
 import TypeScript from "/public/Skills_Logo/typescript.png";
 import Mysql from "/public/Skills_Logo/mysql.png";
@@ -118,7 +120,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8"></div> {/* Add space after the first project */}
+      <div className="mt-8"></div> 
       {/* Second project */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
         <div className="w-100 md:w-3/4 lg:w-2/3 xl:w-1/3">
@@ -131,7 +133,7 @@ const Project = () => {
           />
         </div>
 
-{/* this project is under work */}
+        
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
             <h1 className="text-white text-2xl md:text-3xl">Admin Dashbord</h1>
@@ -214,16 +216,68 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8"></div> {/* Add space after the second project */}
+      <div className="mt-8"></div> 
       {/* Third project */}
+      <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8 mb-8">
+        <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/3">
+          <Image
+            src={TikTakToe}
+            alt="TikTakToe Game"
+            className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
+          />
+        </div>
+
+        <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
+          <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
+            <h1 className="text-white text-2xl md:text-3xl">Tik Tak Toe Game</h1>
+            <p className="text-white text-sm md:text-base mt-2">
+            A Tik-Tak-Toe Game with fully funcanality...Takes players Name and show name on Winning
+            </p>
+            <div className="flex gap-2 md:gap-4 mt-2">
+              <Image
+                src={Reactjs}
+                alt="ReactJS"
+                className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
+              />
+             
+              <Image
+                src={Bootstrap}
+                alt="Bootstrap"
+                className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
+              />
+             
+            </div>
+            <Stack direction="row" spacing={2} mt={2}>
+              <Button variant="contained" size="small" endIcon={<LaunchIcon />}>
+                <a
+                  href="https://tiktaktoe-game-by-kasim.netlify.app/"
+                  target="_blank"
+                >
+                  Play Now
+                </a>
+              </Button>
+              <Button variant="contained" size="small" endIcon={<GitHubIcon />}>
+                <a
+                  href="https://github.com/Kasim-Tech/TikTakToe-Game"
+                  target="_blank"
+                >
+                  View GitHub
+                </a>
+              </Button>
+            </Stack>
+          </div>
+        </div>
+      </div>
+
+      {/* fourth */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
-      <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/3">
-  <Image
-    src={SmartTech}
-    alt="SmartTech"
-    className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
-  />
-</div>
+        <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/3">
+          <Image
+            src={SmartTech}
+            alt="SmartTech"
+            className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
+          />
+        </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
@@ -262,16 +316,15 @@ const Project = () => {
         </div>
       </div>
       <div className="mt-8"></div> {/* Add space after the first project */}
-
-      {/* Fourth project */}
+      {/* Fifth project */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
-      <div className="w-full md:w-1/3">
-  <Image
-    src={MegaMall}
-    alt="MegaMall"
-    className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
-  />
-</div>
+        <div className="w-full md:w-1/3">
+          <Image
+            src={MegaMall}
+            alt="MegaMall"
+            className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
+          />
+        </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
@@ -309,6 +362,7 @@ const Project = () => {
           </div>
         </div>
       </div>
+      
     </div>
   );
 };
