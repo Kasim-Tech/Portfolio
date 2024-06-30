@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Particles from "../Components/Particals";
 import Royalfashion from "/public/Projects_IMG/RoyalFashion1.png";
 import MegaMall from "/public/Projects_IMG/MegaMall.png";
-import TikTakToe from "/public/Projects_IMG/TikTakToe.png"
+import TikTakToe from "/public/Projects_IMG/TikTakToe.png";
 import SmartTech from "/public/Projects_IMG/SmartTech.png";
 import Image from "next/image";
 import {
@@ -120,7 +120,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8"></div> 
+      <div className="mt-8"></div>
       {/* Second project */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
         <div className="w-100 md:w-3/4 lg:w-2/3 xl:w-1/3">
@@ -133,7 +133,6 @@ const Project = () => {
           />
         </div>
 
-        
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
             <h1 className="text-white text-2xl md:text-3xl">Admin Dashbord</h1>
@@ -216,8 +215,70 @@ const Project = () => {
           </div>
         </div>
       </div>
-      <div className="mt-8"></div> 
+      <div className="mt-8"></div>
       {/* Third project */}
+      <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
+        <div className="w-100 md:w-3/4 lg:w-2/3 xl:w-1/3">
+          <video
+            src="/Projects_IMG/TastyBites.mp4"
+            className="border border-white border-4 rounded-lg h-auto md:h-64 w-full transition duration-300 ease-in-out transform hover:scale-105"
+            autoPlay
+            loop
+            muted
+          />
+        </div>
+
+        <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
+          <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
+            <h1 className="text-white text-2xl md:text-3xl">
+              Tasty Bites (Food Delivery)
+            </h1>
+            <p className="text-white text-sm md:text-base mt-2">
+              Tasty Bites is a responsive ReactJS web app featuring a fully
+              functional shopping cart and food filtering functionality. With an
+              attractive UI, it enhances the user experience, making online food
+              ordering seamless and enjoyable across all devices.
+            </p>
+            <div className="flex gap-2 md:gap-4 mt-2">
+              <Image
+                src={Reactjs}
+                alt="ReactJS"
+                className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
+              />
+            
+            
+              <Image
+                src={TypeScript}
+                alt="TS"
+                className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105 "
+              />
+              <Image
+                src={JS}
+                alt="JS"
+                className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
+              />
+             
+            </div>
+            <Stack direction="row" spacing={2} mt={2}>
+              <Button variant="contained" size="small" endIcon={<LaunchIcon />}>
+                <a href="https://tasty-bitezz.netlify.app/" target="_blank">
+                  Launch Project
+                </a>
+              </Button>
+              <Button variant="contained" size="small" endIcon={<GitHubIcon />}>
+                <a
+                  href="https://github.com/Kasim-Tech/food_delevery-Tasty-Bites-"
+                  target="_blank"
+                >
+                  View GitHub
+                </a>
+              </Button>
+            </Stack>
+          </div>
+        </div>
+      </div>
+      <div className="mt-8"></div>
+      {/* fourth Project */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8 mb-8">
         <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/3">
           <Image
@@ -229,9 +290,12 @@ const Project = () => {
 
         <div className="w-full md:w-1/2 flex justify-center items-center md:items-start">
           <div className="flex flex-col justify-center items-start w-full md:w-3/4 ">
-            <h1 className="text-white text-2xl md:text-3xl">Tik Tak Toe Game</h1>
+            <h1 className="text-white text-2xl md:text-3xl">
+              Tik Tak Toe Game
+            </h1>
             <p className="text-white text-sm md:text-base mt-2">
-            A Tik-Tak-Toe Game with fully funcanality...Takes players Name and show name on Winning
+              A Tik-Tak-Toe Game with fully funcanality...Takes players Name and
+              show name on Winning
             </p>
             <div className="flex gap-2 md:gap-4 mt-2">
               <Image
@@ -239,13 +303,12 @@ const Project = () => {
                 alt="ReactJS"
                 className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
               />
-             
+
               <Image
                 src={Bootstrap}
                 alt="Bootstrap"
                 className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
               />
-             
             </div>
             <Stack direction="row" spacing={2} mt={2}>
               <Button variant="contained" size="small" endIcon={<LaunchIcon />}>
@@ -268,7 +331,6 @@ const Project = () => {
           </div>
         </div>
       </div>
-
       {/* fourth */}
       <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
         <div className="w-full md:w-3/4 lg:w-2/3 xl:w-1/3">
@@ -317,7 +379,7 @@ const Project = () => {
       </div>
       <div className="mt-8"></div> {/* Add space after the first project */}
       {/* Fifth project */}
-      <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
+      {/* <div className="flex flex-col md:flex-row justify-center items-center w-full px-4 md:px-24 mt-6 gap-8">
         <div className="w-full md:w-1/3">
           <Image
             src={MegaMall}
@@ -361,8 +423,8 @@ const Project = () => {
             </Stack>
           </div>
         </div>
-      </div>
-      
+      </div> */}
+      {/* Sixeth Project */}
     </div>
   );
 };
