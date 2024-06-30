@@ -245,19 +245,23 @@ const Project = () => {
                 alt="ReactJS"
                 className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
               />
-            
-            
+
+              <Image
+                src={CssLogo}
+                alt="CssLogo"
+                className="h-6 md:h-7 w-auto transition duration-300 ease-in-out transform hover:scale-105 mt-1"
+              />
               <Image
                 src={TypeScript}
                 alt="TS"
                 className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105 "
               />
+
               <Image
                 src={JS}
                 alt="JS"
                 className="h-6 md:h-8 w-auto transition duration-300 ease-in-out transform hover:scale-105"
               />
-             
             </div>
             <Stack direction="row" spacing={2} mt={2}>
               <Button variant="contained" size="small" endIcon={<LaunchIcon />}>
