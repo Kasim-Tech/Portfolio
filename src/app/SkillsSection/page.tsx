@@ -5,6 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 import Reactjs from "/public/Skills_Logo/react.png";
 import HtmlLogo from "/public/Skills_Logo/html.png";
+import CodeIgniter from "/public/Skills_Logo/codeIgniter4.png";
 import CssLogo from "/public/Skills_Logo/css.png";
 import NextjsLogo from "/public/Skills_Logo/Next.png";
 import PostmanLogo from "/public/Skills_Logo/postman.png";
@@ -43,6 +44,7 @@ const Skills = () => {
             { image: Github, name: "GitHub", tooltip: "GitHub" },
             { image: Bootstrap, name: "Bootstrap", tooltip: "Bootstrap" },
             { image: MUI, name: "MUI", tooltip: "Material UI" },
+            // { image: CodeIgniter, name: "CodeIgniter-4", tooltip: "CodeIgniter 4" },
           ].map((logo, index) => (
             <Tooltip key={index} title={logo.tooltip} placement="top" arrow>
               <div className="flex flex-col items-center cursor-pointer">

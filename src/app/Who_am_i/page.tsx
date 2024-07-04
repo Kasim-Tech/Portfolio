@@ -3,7 +3,6 @@
 import React from "react";
 import { Button } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import AttachEmailIcon from "@mui/icons-material/AttachEmail";
 import Particles from "../Components/Particals";
 
 const Whoami = () => {
@@ -25,7 +24,7 @@ const Whoami = () => {
           websites that are intuitive and enjoyable for users to navigate.
         </p>
 
-        <div className="text-center justify-center mt-12 ">
+        <div className="text-center justify-center mt-12">
           <Button
             variant="contained"
             endIcon={<DownloadIcon />}
@@ -40,36 +39,15 @@ const Whoami = () => {
                 backgroundColor: "#92C2E8",
                 color: "#000000",
               },
-              minWidth: "auto", 
-              marginLeft: "4", 
-              mt: { base: 2, md: 0 },
+              minWidth: "auto",
+              marginLeft: "4",
+              mt: { xs: 2, md: 0 }, // Add margin top on mobile
+              mb: { xs: 2, md: 0 }, // Add margin bottom on mobile
             }}
           >
             <a href="/Kasim_cv.pdf" download>
               Download CV
             </a>
-          </Button>
-          <Button
-          
-            variant="contained"
-            endIcon={<AttachEmailIcon />}
-            sx={{
-              borderRadius: "999px",
-              textTransform: "none",
-              py: 2,
-              px: 4,
-              color: "#fff",
-              backgroundColor: "#2196F3",
-              "&:hover": {
-                backgroundColor: "#92C2E8",
-                color: "#000000",
-              },
-              minWidth: "auto", // Increase button width for desktop
-              marginLeft: { base: 0, md: 4 }, // Add margin left on desktop
-              mt: { base: 4, md: 0 }, // Add margin top on mobile
-            }}
-          >
-            Get in Touch
           </Button>
         </div>
       </div>
