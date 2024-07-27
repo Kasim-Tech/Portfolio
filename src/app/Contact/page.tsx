@@ -140,9 +140,9 @@ const Contact = () => {
 
         {/* Right side content */}
         <div className="right md:text-white md:font-bold md:text-3xl md:MAINHEDDING">
-          <div className="hidden md:block">"Feel Free to Reach Out."</div>
+          <div className="hidden md:block">Feel free to reach out</div>
           <div className="hidden md:block text-2xl">
-            i will Contect you As soon as Possible..
+            i will connect with you as soon as possible..
           </div>
           <div className="hidden md:block ">
             <h1 className="text-2xl mt-5">Other Places</h1>
